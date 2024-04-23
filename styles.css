@@ -1,0 +1,198 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* Representante firma  */
+/* Estilos para el dropdown */
+/* Estilo para el botón de representante de firma */
+.dropbtn {
+  font-size: 10px; /* Tamaño de la letra más pequeño */
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  color: black;
+  position: fixed; /* Posición fija */
+  top: 20px; /* Distancia desde la parte superior */
+  left: 20px; /* Distancia desde el lado izquierdo */
+  z-index: 9999; /* Para asegurar que esté encima de otros elementos */
+  font-size: 20px;
+  background-color: white;
+}
+
+/* Estilos para el dropdown */
+.dropdown-content {
+  display: none;
+  position: fixed;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  top: 30px; /* Distancia desde la parte superior */
+  left: 0; /* Alinear con el botón */
+  font-family: "Times New Roman", Times, serif;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background-color: #f1f1f1;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+table td,
+table th {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+  line-height: 1.5; /* Aumenta la altura de línea para más separación */
+}
+
+table th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #f2f2f2;
+}
+
+header {
+  background-color: #333;
+  padding: 3% 2px; /* Ajuste del padding para dispositivos móviles */
+  text-align: center;
+  background-color: black;
+  background-size: cover; /* Ajusta el tamaño de la imagen para que cubra todo el encabezado */
+  background-position: center; /* Centra la imagen */
+  color: #fff;
+}
+
+/* Media query para ajustar el padding en dispositivos más pequeños */
+@media screen and (max-width: 768px) {
+  header {
+    padding: 2% 7px; /* Ajuste del padding para dispositivos más pequeños */
+  }
+}
+
+.primero {
+  color: white;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 38px;
+  /*Efectodedestello*/
+  animation: destello 1s infinite alternate;
+  -webkit-animation: destello 1s infinite alternate;
+}
+
+@keyframes destello {
+  0% {
+    text-shadow: 0 0 10px white; /* Color del destello */
+  }
+  100% {
+    text-shadow: 0 0 20px white; /* Color del destello y su intensidad */
+  }
+}
+
+main {
+  padding: 20px;
+}
+/* Estilos para la sección de servicios */
+#servicios {
+  padding: 20px;
+}
+
+#servicios h2 {
+  color: #333;
+  font-family: "Arial Black", Arial, sans-serif; /* Cambio de fuente */
+  font-size: 32px; /* Tamaño de fuente para desktop */
+}
+
+#servicios ul {
+  list-style: none;
+  padding: 0;
+}
+
+#servicios ul li {
+  margin-bottom: 10px;
+  font-family: "Arial", sans-serif; /* Cambio de fuente */
+  font-size: 18px; /* Tamaño de fuente para desktop */
+}
+
+/* Estilos para dispositivos móviles */
+@media screen and (max-width: 768px) {
+  #servicios h2 {
+    font-size: 24px; /* Tamaño de fuente para dispositivos móviles */
+  }
+
+  #servicios ul li {
+    font-size: 16px; /* Tamaño de fuente para dispositivos móviles */
+  }
+}
+
+/* Seccion de contacto */
+#contacto {
+  margin-top: 50px;
+  padding: 20px;
+  background-color: black;
+  text-align: center; /* Para centrar el contenido */
+  border-radius: 10px; /* Para darle esquinas redondeadas */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
+}
+
+#contacto h2 {
+  color: white;
+  font-size: 24px;
+  margin-bottom: 20px; /* Separación entre el título y los párrafos */
+}
+
+#contacto p {
+  margin-bottom: 10px;
+  font-size: 18px;
+  color: white; /* Color de texto más suave */
+}
+
+/* Estilo imagenen esquina */
+/* Estilo para la esquina de la imagen */
+.corner-image {
+  position: fixed;
+  top: 0;
+  right: 0;
+  margin-top: 10px;
+  margin-right: 10px;
+  border-radius: 90%;
+  /*Parahacerlaimagenredonda*/
+  overflow: hidden;
+  -webkit-border-radius: 90%;
+  -moz-border-radius: 90%;
+  -ms-border-radius: 90%;
+  -o-border-radius: 90%;
+}
+
+/* Estilo para la imagen */
+.corner-image img {
+  width: 100px; /* Ajusta el tamaño de la imagen según sea necesario */
+  height: auto; /* Permite que la altura se ajuste automáticamente según el ancho */
+}
+
+/* Media query para ajustar la imagen en dispositivos móviles */
+@media screen and (max-width: 768px) {
+  .corner-image {
+    margin-top: 8px; /* Ajusta el margen superior en dispositivos móviles */
+    margin-right: 9px; /* Ajusta el margen derecho en dispositivos móviles */
+  }
+
+  .corner-image img {
+    width: 59px; /* Ajusta el tamaño de la imagen en dispositivos móviles */
+  }
+}
